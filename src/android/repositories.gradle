@@ -5,3 +5,7 @@ ext.repos = {
         url 'https://jitpack.io' //add this 
     }
 }
+
+dependencies {
+    implementation 'com.dmcBig:mediapicker'
+}
