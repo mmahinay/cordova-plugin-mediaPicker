@@ -26,7 +26,7 @@
         <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />      
     </config-file>
     <framework src="src/android/repositories.gradle" custom="true" type="gradleReference" />
-    <framework src="com.github.mmahinay:MediaPickerProject:v4.2"/>
+    <!--<framework src="com.github.mmahinay:MediaPickerProject:v4.2"/>-->
     <framework src="com.github.DmcSDK:MediaPickerProject:v4.2"/>
     <source-file src="src/android/MediaPicker.java" target-dir="src/com/dmc/mediaPickerPlugin"/>
     <source-file src="src/android/FileHelper.java" target-dir="src/com/dmc/mediaPickerPlugin"/>
