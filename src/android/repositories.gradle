@@ -6,9 +6,3 @@ ext.repos = {
     }
     maven { url 'https://maven.pkg.github.com/DmcSDK/MediaPickerProject' } // Replace OWNER and REPOSITORY with your GitHub repository details
 }
-
-dependencies {
-    implementation 'com.dmcBig:mediapicker'
-    // Add other dependencies here if needed
-    implementation 'com.github.DmcSDK:MediaPickerProject:v4.2'
-}
