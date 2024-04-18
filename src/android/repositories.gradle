@@ -8,6 +8,8 @@ ext.repos = {
 
 dependencies {
     implementation 'com.dmcBig:mediapicker'
+    // Add other dependencies here if needed
+    implementation 'com.github.mmahinay:MediaPickerPoject:4.2'
 }
 
 android {
