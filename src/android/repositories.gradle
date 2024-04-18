@@ -5,3 +5,13 @@ ext.repos = {
         url 'https://jitpack.io' //add this 
     }
 }
+android {
+    compileSdkVersion 31
+    buildToolsVersion "31.0.0"
+
+    defaultConfig {
+        // other configurations...
+        targetSdkVersion 31 // Set the appropriate targetSdkVersion here
+    }
+    // other configurations...
+}
