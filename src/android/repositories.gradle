@@ -4,5 +4,4 @@ ext.repos = {
     maven { //add this 
         url 'https://jitpack.io' //add this 
     }
-    maven { url 'https://maven.pkg.github.com/DmcSDK/MediaPickerProject' } // Replace OWNER and REPOSITORY with your GitHub repository details
 }
