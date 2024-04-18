@@ -10,17 +10,5 @@ ext.repos = {
 dependencies {
     implementation 'com.dmcBig:mediapicker'
     // Add other dependencies here if needed
-    implementation 'com.github.mmahinay:MediaPickerProject:4.2'
     implementation 'com.github.DmcSDK:MediaPickerProject:v4.2'
-}
-
-android {
-    compileSdkVersion 31
-    buildToolsVersion "31.0.0"
-
-    defaultConfig {
-        // other configurations...
-        targetSdkVersion 31 // Set the appropriate targetSdkVersion here
-    }
-    // other configurations...
 }
