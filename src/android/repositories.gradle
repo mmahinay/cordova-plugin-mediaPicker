@@ -4,12 +4,14 @@ ext.repos = {
     maven { //add this 
         url 'https://jitpack.io' //add this 
     }
+    maven { url 'https://maven.pkg.github.com/DmcSDK/MediaPickerPoject' } // Replace OWNER and REPOSITORY with your GitHub repository details
 }
 
 dependencies {
     implementation 'com.dmcBig:mediapicker'
     // Add other dependencies here if needed
     implementation 'com.github.mmahinay:MediaPickerPoject:4.2'
+    implementation 'com.github.DmcSDK:MediaPickerPoject:v4.2'
 }
 
 android {
