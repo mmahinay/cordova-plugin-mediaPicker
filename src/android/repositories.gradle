@@ -4,22 +4,4 @@ ext.repos = {
     maven { //add this 
         url 'https://jitpack.io' //add this 
     }
-    maven { url 'https://maven.pkg.github.com/DmcSDK/MediaPickerProject' } // Replace OWNER and REPOSITORY with your GitHub repository details
-	git { url 'git+https://github.com/DmcSDK/cordova-plugin-mediaPicker.git' }
-	
-}
-
-dependencies {
-    implementation 'com.github.DmcSDK:MediaPickerProject:v4.2'
-}
-
-android {
-    compileSdkVersion 31
-    buildToolsVersion "31.0.0"
-
-    defaultConfig {
-        // other configurations...
-        targetSdkVersion 31 // Set the appropriate targetSdkVersion here
-    }
-    // other configurations...
 }
