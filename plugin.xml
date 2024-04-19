@@ -13,7 +13,7 @@
       </feature>
     </config-file>
     <config-file parent="/*" target="AndroidManifest.xml"/>
-    <framework src="com.github.DmcSDK:MediaPickerPoject:v4.2"/>
+    <framework src="com.github.DmcSDK:MediaPickerPoject:v4.0"/>
     <source-file src="src/android/MediaPicker.java" target-dir="src/com/dmc/mediaPickerPlugin"/>
     <source-file src="src/android/FileHelper.java" target-dir="src/com/dmc/mediaPickerPlugin"/>
     <resource-file src="src/android/Library/res/values-tr/multiimagechooser_strings_tr.xml" target="res/values-tr/multiimagechooser_strings_tr.xml"/>
