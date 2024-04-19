@@ -7,18 +7,29 @@
   </js-module>
 
   <platform name="android">
+    <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application" xmlns:android="http://schemas.android.com/apk/res/android">
+            <application android:requestLegacyExternalStorage="true" />
+    </edit-config>
     <config-file parent="/*" target="res/xml/config.xml">
       <feature name="MediaPicker">
         <param name="android-package" value="com.dmc.mediaPickerPlugin.MediaPicker"/>
       </feature>
     </config-file>
     <config-file parent="/*" target="AndroidManifest.xml"/>
-    <framework src="com.github.DmcSDK:MediaPickerPoject:v4.0"/>
+    <config-file parent="/manifest" target="AndroidManifest.xml">
+        <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" android:minSdkVersion = "33"/>
+        <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"  android:minSdkVersion = "33"/>
+        <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"  android:minSdkVersion = "33"/>
+        <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32"/>
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="32"/>
+    </config-file>
+
+    <framework src="com.github.DmcSDK:MediaPickerPoject:v4.2"/>
     <source-file src="src/android/MediaPicker.java" target-dir="src/com/dmc/mediaPickerPlugin"/>
     <source-file src="src/android/FileHelper.java" target-dir="src/com/dmc/mediaPickerPlugin"/>
     <resource-file src="src/android/Library/res/values-tr/multiimagechooser_strings_tr.xml" target="res/values-tr/multiimagechooser_strings_tr.xml"/>
     <resource-file src="src/android/Library/res/values-de/multiimagechooser_strings_de.xml" target="res/values-de/multiimagechooser_strings_de.xml"/>
-</platform>
+  </platform>
 
   <platform name="ios">
     <config-file parent="/*" target="config.xml">
